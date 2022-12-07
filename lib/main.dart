@@ -8,7 +8,7 @@ void main() {
     initialRoute: '/',
     routes: {
       '/': (context) => HomePage(),
-      '/item': (context) => const ItemPage(),
+      '/item': (context) => ItemPage(),
     },
   ));
 }

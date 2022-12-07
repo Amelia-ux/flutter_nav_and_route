@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Jobsheet 5 - Amelia Marshanda/2041720041"),
+        title: const Text("Nav&Route - Amelia Marshanda/2041720041"),
       ),
       body: Container(
         margin: const EdgeInsets.all(8),
@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
             final item = items[index];
             return InkWell(
               onTap: () {
-                Navigator.pushNamed(context, '/item');
+                Navigator.pushNamed(context, '/item', arguments: item);
               },
               child: Card(
                 child: Container(
@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                           item.price.toString(),
                           textAlign: TextAlign.end,
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
